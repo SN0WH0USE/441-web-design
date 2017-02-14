@@ -4,10 +4,14 @@
         <meta charset="utf-8">
         <title>Inner HTML</title>
     </head>
-    <body style=s">
-      <button onclick="setTimeout(myFunction, 3000);">Try it</button>
+    <body s="background-color:green;">
+<div id="fullbody">
+  
+</div>
+    <button onclick="setTimeout(myFunction, 3000);">Try it</button>
 
         <script type="text/javascript">
+  document.getElementById("fullbody").innerHTML = 'something'
 var s="background-color:green;"
         function myFunction() {
   s="background-color:red;"
@@ -16,3 +20,4 @@ var s="background-color:green;"
 
     </body>
 </html>
+
