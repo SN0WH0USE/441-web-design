@@ -4,20 +4,25 @@
         <meta charset="utf-8">
         <title>Inner HTML</title>
     </head>
-    <body s="background-color:green;">
-<div id="fullbody">
-  
-</div>
-    <button onclick="setTimeout(myFunction, 3000);">Try it</button>
+    <body id='body' style="background-color:green;">
 
-        <script type="text/javascript">
-  document.getElementById("fullbody").innerHTML = 'something'
-var s="background-color:green;"
-        function myFunction() {
-  s="background-color:red;"
+<div id="fullbody">
+</div>
+
+
+        <script type="text/javascript">///////////////////////////////////////////////////////////////////////////
+        var myVar = setInterval(myTimer ,5000);
+        function myTimer() {
+        	var x=20
+            document.getElementById("timer").innerHTML = x
+        }
+
+  document.getElementById("fullbody").innerHTML = '<h1 style="text-align:center;">Countdown Timer</h1><h2 style="text-align:center;">Time Left-20</h2>'
+        function myTimer() {
+document.getElementById("body").style.backgroundColor = 'red'
+document.getElementById("fullbody").innerHTML='<h1 style="text-align:center;">Countdown Done!</h1>'
 }
         </script>
 
     </body>
 </html>
-
