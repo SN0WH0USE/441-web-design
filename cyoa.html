@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CYOA</title>
+</head>
+<style>
+alert {background-color: red;}
+body {background-color: black;}
+h1   {color: cyan;}
+p    {color: green;}
+p {font-size: 20;}
+p{font-family: fantasy;}
+</style>
+
+
+<body >
+  <p>You Are Dead. How Do You Respond?</p>
+  <button onclick="alert('YOU DIED')">Oh.Ok then</button>
+  <button onclick="a_a()">WHAT!? I HAVENT EVEN STARTED YET!!</button>
+  <button onclick="a_b()">Hell No, I'm not ready to die.</button>
+  <p id="CYOAA"></p>
+
+  <script>
+  function a_a() {
+    document.getElementById("CYOAA").innerHTML = "Deal, All Life Ends";
+  }
+  function a_b() {
+    document.getElementById("CYOAA").innerHTML = "Very Well, You May Live As Well As Chose A Name <p><button onclick='suzy()'>SUZY</button> <button onclick='tom()'>TOM</button> <button onclick='cloud()'>Cloud</button> <button onclick='baby()'>None of these are my name.</button></p><div id='bs2'></div>"
+    ;
+  }
+    function suzy() {
+    document.getElementById('bs2').innerHTML ="Ah, SUZY, A Fine Name For A Fine Lady<p><button onclick='begin()'>Begin Adventure.</button></p><div id='bs3'></div>";
+  }
+    function tom() {
+    document.getElementById('bs2').innerHTML ="TOM, A Strong And Simple Name For A Strong And Simple Man<p><button onclick='begin()'>Begin Adventure.</button></p><div id='bs3'></div>";
+  }
+
+  function begin() {
+  document.getElementById('bs3').innerHTML ="After Denying Death You Wake In A Graveyard. However, Death Will Not Be Cheated So Easily. A Skeletal Horde Surrounds You Planning To Kill You For Their Master. <p><button onclick='run()'>Run.</button> <button onclick='fight()'>Fight.</button></p><div id='bs4'></div>";
+}
+function run() {
+document.getElementById('bs4').innerHTML ="The Horde Is Everywhere, There Is No Escape. Fighting Is Your Only Option";
+}
+function fight() {
+document.getElementById('bs4').innerHTML ="You Kick The Closest Skeleton In The Ribs And It Crumbles. How Do You Follow Up Your Attack?<p><button onclick='throwskull()'>Throw skull.</button> <button onclick='legbat()'>Leg bat.</button></p><div id='bs5'></div>";
+}
+function throwskull() {
+document.getElementById('bs5').innerHTML ="The Skull Flies Into Another Skeleton And Shatters It But While Your Back Is Turned You A Grabbed From Behind And Strangled By Skeletal Hands";
+alert('YOU DIED');
+}
+function legbat() {
+document.getElementById('bs5').innerHTML ="Using The Leg Of Your Fallen Enemy As A Weapon You Batter Away A Path Through Which You May Escape<p><button onclick='saferun()'>Run.</button> <button onclick='continuefighting()'>Continue fighting </button></p><div id='bs6'></div>";
+}
+function saferun() {
+document.getElementById('bs6').innerHTML ="<h1>You Escape Through The Clearing You Have Made An Escape Death… For Today. You Are Victorious!!</h1>"
+}
+function continuefighting() {
+document.getElementById('bs6').innerHTML ="<h1>The Fragile And Unarmed Skeletons Are No Match For You And Your Leg Bat. They Fall Helplessly As You Delight In Destroying Them. You Are Victorious!!</h1>"
+}
+
+
+
+    function cloud() {
+    document.getElementById('bs2').innerHTML ="HAHAHAH, WHAT A NERD<p><button onclick='notnice()'>Well that’s not nice to say </button></p><div id='bs3'></div>";
+  }
+  function notnice() {
+  document.getElementById('bs3').innerHTML ="I Know, I’m Just Kidding Though. I Actually Like Those Games. Which One Is Your Favorite?<p><button onclick='ff1()'>1</button> <button onclick='ff4()'>4</button> <button onclick='ff7()'>7</button> <button onclick='ff13()'>13</button></p><div id='bs4'></div>";
+}
+function ff1() {
+document.getElementById('bs4').innerHTML ="Can’t Argue With That, Number 1 Is Number 1<p><button onclick='thegame()'>So… is there actually a game?</button></p><div id='bs5'></div>";
+}
+function ff4() {
+document.getElementById('bs4').innerHTML ="Nice Choice, Kefka Is A Great Antagonist<p><button onclick='thegame()'>So… is there actually a game?</button></p><div id='bs5'></div>";
+}
+function ff7() {
+document.getElementById('bs4').innerHTML ="Ah, The Prodigal Son<p><button onclick='thegame()'>So… is there actually a game?</button></p><div id='bs5'></div>";
+}
+function ff13() {
+document.getElementById('bs4').innerHTML ="Really? Me Too, No One Else Seems To Like It Though<p><button onclick='thegame()'>So… is there actually a game?</button></p><div id='bs5'></div>";
+}
+function thegame() {
+document.getElementById('bs5').innerHTML ="No, Not Really. Sorry I Called You A Nerd Though<p><button onclick='itscool()'>Its cool, I know you were joking</button> <button onclick='stillupset()'>I’m still kind of upset about that actually</button></p><div id='bs6'></div>";
+}
+function itscool() {
+document.getElementById('bs6').innerHTML ="<h1>Congratulations!! You Earned The Power Of Forgiveness. You Are Victorious!!</h1>";
+}
+
+function stillupset() {
+document.getElementById('bs6').innerHTML ="Would An Apology Cookie Help Then?<p><button onclick='notreally()'>Not really</button> <button onclick='cookie()'>A cookie sounds nice</button></p><div id='bs7'></div>";
+}
+function notreally() {
+document.getElementById('bs7').innerHTML ="Then I Don't Think I Can Help You. Goodbye";
+}
+function cookie() {
+document.getElementById('bs7').innerHTML ="I Actually Don't Have One, I Was Just Trying To Be Nice <p><button onclick='knowwhat()'>You know what, its cool</button></p><div id='bs8'></div>";
+}
+function knowwhat() {
+document.getElementById('bs8').innerHTML ="<h1>Congratulations!! You Earned The Power Of Forgiveness. You Are Victorious!!</h1>";
+}
+
+
+  function baby() {
+    document.getElementById('bs2').innerHTML ="OH, Your Name Is Poopy Dipper Baby? How Exotic. Are You Ready For Your Adventure Poopy Diaper Baby?<p><button onclick='babyadventure()'>YES</button> <button onclick='babydate()'>NO</button> <button onclick='dontcallmethat()'>Don't call me that, that is not my name </button> </p><div id='bs3'></div>";
+  }
+      function babyadventure() {
+    document.getElementById('bs3').innerHTML ="You Make Poopy In Your Diaper As You Are A Little Baby, How Do You Respond<p><button onclick='wipe()'>I guess I wipe myself?</button> <button onclick='notfunny()'>This isn’t funny anymore</button></p><div id='bs4'></div>"
+  }
+        function wipe() {
+    document.getElementById('bs4').innerHTML ="<h1>CONGRATULATIONS!! In Learning To Wipe Yourself You Have Become A Toddler; You Are No Longer A Baby. You Are Victorious!!</h1>";
+  }
+        function notfunny() {
+    document.getElementById('bs4').innerHTML ="Then Go Back And Chose A New Name";
+  }
+
+      function babydate() {
+    document.getElementById('bs3').innerHTML ="Very Well, Take Your Time, It’s Not Like I Have A Date To Get To Or Anything<p><button onclick='sorry()'>Oh I’m sorry, do you actually have a date?</button></p><div id='bs4'></div>"
+  }
+  function sorry() {
+    document.getElementById('bs4').innerHTML ="I Do But It’s Cool, Time Is An Illusion And This Game Is Already Finished So Take As Long As You Want. I’m Not Really Here"
+  }
+  function dontcallmethat() {
+    document.getElementById('bs3').innerHTML ="Sounds Like Something A Little Poopy Diaper Baby Would Say To Me <p><button onclick='thisisstupid()'>THIS IS STUPID!!</button></p><div id='bs4'></div>"
+  }
+
+  function thisisstupid(){
+    document.getElementById('bs4').innerHTML ="Then Give Up<p><button onclick='gameover()'>FINE!!</button> <button onclick='choosearealname()'>NO!! GIVING UP IS PATHETIC!!</button></p><div id='bs5'></div>";
+  }
+
+  function gameover(){
+    alert('YOU DIED');
+  }
+  function choosearealname(){
+    document.getElementById('bs5').innerHTML ="That’s The Spirit! Go Back And Choose A Real Name Then";
+  }
+  </script>
+
+
+</body>
+</html>
