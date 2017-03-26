@@ -13,3 +13,5 @@ for (i = 0; i < fib; i++) {
 
 //to get a desired output set 
 fib = "x"
+//the type
+res
