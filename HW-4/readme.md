@@ -1,7 +1,3 @@
-# HW-4 test readme
+# HW-4 readme
 
-This is the empty shell for the the HW-4 assignment. Please copy it and place it in your git repo directory.
-
-To upload, place a link to your directory on the HW-4 wiki.
-
-Please, also create a zip'd file containing the finished HW-4 directory, place this _INSIDE_ the HW-4 directory.
+i had the hardest time grasping this for some reason, it think it was all the rain clouding up my mind. i tried to do this every day for weeks and couldn't understand it in the slightest, i literally couldn't get past opening up node.js.  and then this mourning i woke up drove 300 miles made myself a cup of tea and knocked this all out in one sitting like it was nothing. i got a little confused on the $ symbol for a second but that was my only real hiccup.
