@@ -13,3 +13,11 @@ The file will be run with the following command (`node 01_printing.js`).
 */
 
 // Start code below this line
+//variable for filename
+var name_of_file = '01_printing.js';
+
+//variable as a multiline
+var str_multiLine = `\nThe name of this file is ${name_of_file}.\nWhoa, part 1 is done.\n`;
+
+// prints it to the console
+console.log(str_multiLine);
